@@ -10,11 +10,11 @@
   "author": "Ahmed Haque",
   "license": "ISC",
   "dependencies": {
-    "react": "^0.14.3",
-    "react-grid-system": "^2.9.2",
-    "react-tap-event-plugin": "^2.0.1",
     "material-ui": "^0.18.3",
-    "react-dom": "^0.14.3"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-grid-system": "^2.9.2",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.3.13",

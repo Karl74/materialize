@@ -4,7 +4,9 @@ import React from "react"
 
 import {Container, Row, Col} from "react-grid-system"
 
-
+import {Card, CardHeader, CardTitle, CardTex} from 'material-ui/Card' 
+import AppBar from 'material-ui/AppBar'
+import TextField from 'material-ui/TextField';
 
 
 // Here we include all of the sub-components
@@ -25,7 +27,33 @@ var Parent = React.createClass({
     return (
      <MuiThemeProvider>
       <Container>
-          
+          <AppBar
+            title="Title"
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+            color = "black"
+          />
+
+      <Card>    
+
+            <h1>This is React </h1>  
+
+      <div>   
+
+      <h2> Controls here </h2>   
+            <TextField
+              hintText="Your User Name"
+              floatingLabelText="User Name"
+              floatingLabelFixed={true}
+            />
+            <br />
+            <TextField
+              hintText="Password "
+              floatingLabelText="Password"
+              type="password"
+            />
+            <br />   
+      </div>  
+
 
        
             <div>
@@ -39,7 +67,7 @@ var Parent = React.createClass({
             <div>
               <Ggchild setParent={this.setParent} />
             </div>
-          
+        </Card>    
         </Container>
        </MuiThemeProvider>
         
